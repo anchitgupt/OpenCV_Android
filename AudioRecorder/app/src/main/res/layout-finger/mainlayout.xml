@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/front_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="RECORD"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+    <ImageView
+        android:id="@+id/record"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/front_image"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/white"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginRight="48dp"
+        android:src="@android:drawable/ic_media_play"
+        android:background="@android:color/white"
+        android:layout_alignTop="@+id/record"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/record"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/stop"
+        app:srcCompat="@android:drawable/ic_media_pause"
+        android:background="@android:color/white"
+        />
+    <ImageView
+        android:id="@+id/gallery"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="192dp"
+        android:background="@android:color/white"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:layout_alignTop="@+id/stop"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

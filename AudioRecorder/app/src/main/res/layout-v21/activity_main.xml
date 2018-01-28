@@ -12,19 +12,6 @@
     tools:context="com.raw.com.audiorecorder.MainActivity"
     tools:background="@android:color/background_light">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/presence_audio_away"
-        android:id="@+id/imageView"
-        android:adjustViewBounds="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:contentDescription=""
-        tools:ignore="ContentDescription,RtlHardcoded"
-        android:layout_above="@+id/button" />
-
     <Button
         android:background="@android:color/holo_green_light"
         android:text="@string/start_recording"
@@ -81,5 +68,17 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/presence_audio_away"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:contentDescription=""
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button" />
 
 </RelativeLayout>
